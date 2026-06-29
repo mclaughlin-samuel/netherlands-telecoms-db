@@ -32,7 +32,11 @@ This project is being built incrementally alongside *Learning SQL*. Each phase a
 
 ## Current status
 
-Phase 1 in progress — `operator` and `network` tables created. Initial data inserted for KPN, VodafoneZiggo, and Odido.
+Phase 1 in progress — `operator` and `network` tables created and populated.
+
+**Operators:** KPN, VodafoneZiggo, Odido (MNOs), Simyo, Ben (MVNOs)
+
+**Networks:** 4G and 5G records for all three MNOs
 
 ## Schema
 
