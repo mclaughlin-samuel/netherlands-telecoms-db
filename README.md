@@ -40,7 +40,7 @@ Phase 1 in progress — `operator` and `network` tables created.
 
 | Column | Type | Notes |
 |---|---|---|
-| `operator_id` | SMALLINT UNSIGNED | Primary key |
+| `operator_id` | SMALLINT UNSIGNED | Primary key, auto-increment |
 | `company_name` | VARCHAR(100) | |
 | `parent_company` | VARCHAR(100) | |
 | `company_type` | ENUM | MNO, MVNO, ISP, MVNE, MVNA, ICTSP |

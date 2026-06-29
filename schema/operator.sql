@@ -1,5 +1,5 @@
 CREATE TABLE operator
-(operator_id SMALLINT UNSIGNED,
+(operator_id SMALLINT UNSIGNED AUTO_INCREMENT,
 company_name VARCHAR(100),
 parent_company VARCHAR(100),
 company_type ENUM('MNO', 'MVNO', 'ISP', 'MVNE', 'MVNA', 'ICTSP'),
