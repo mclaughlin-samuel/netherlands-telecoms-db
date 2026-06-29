@@ -32,7 +32,7 @@ This project is being built incrementally alongside *Learning SQL*. Each phase a
 
 ## Current status
 
-Phase 1 in progress — `operator` table created.
+Phase 1 in progress — `operator` and `network` tables created.
 
 ## Schema
 
@@ -43,11 +43,21 @@ Phase 1 in progress — `operator` table created.
 | `operator_id` | SMALLINT UNSIGNED | Primary key |
 | `company_name` | VARCHAR(100) | |
 | `parent_company` | VARCHAR(100) | |
-| `company_type` | VARCHAR(20) | e.g. MNO, MVNO, ISP |
-| `ownership` | VARCHAR(20) | e.g. Public, Private, State-owned |
+| `company_type` | ENUM | MNO, MVNO, ISP, MVNE, MVNA, ICTSP |
+| `ownership` | ENUM | Public, Private, State-owned, Joint venture |
 | `headquarters` | VARCHAR(100) | |
 | `website` | VARCHAR(255) | |
 | `employees` | INTEGER | |
 | `annual_revenue` | DECIMAL(15,2) | In euros |
 | `last_updated` | DATETIME | |
 | `source` | VARCHAR(255) | |
+
+### `network`
+
+| Column | Type | Notes |
+|---|---|---|
+| `operator_id` | SMALLINT UNSIGNED | Primary key (composite); foreign key to `operator` |
+| `technology` | ENUM | Primary key (composite); 2G, 3G, 4G, 5G |
+| `launch_year` | YEAR | |
+| `network_vendor` | VARCHAR(100) | e.g. Ericsson, Nokia, Huawei |
+| `coverage_percentage` | DECIMAL(5,2) | |
