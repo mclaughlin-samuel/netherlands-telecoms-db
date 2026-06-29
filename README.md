@@ -32,4 +32,22 @@ This project is being built incrementally alongside *Learning SQL*. Each phase a
 
 ## Current status
 
-Phase 1 in progress.
+Phase 1 in progress — `operator` table created.
+
+## Schema
+
+### `operator`
+
+| Column | Type | Notes |
+|---|---|---|
+| `operator_id` | SMALLINT UNSIGNED | Primary key |
+| `company_name` | VARCHAR(100) | |
+| `parent_company` | VARCHAR(100) | |
+| `company_type` | VARCHAR(20) | e.g. MNO, MVNO, ISP |
+| `ownership` | VARCHAR(20) | e.g. Public, Private, State-owned |
+| `headquarters` | VARCHAR(100) | |
+| `website` | VARCHAR(255) | |
+| `employees` | INTEGER | |
+| `annual_revenue` | DECIMAL(15,2) | In euros |
+| `last_updated` | DATETIME | |
+| `source` | VARCHAR(255) | |
