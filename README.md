@@ -1,8 +1,8 @@
-# Global Telecoms Database
+# Netherlands Telecoms Database
 
-A self-designed MySQL database modelling global telecoms operators — built as a hands-on SQL fundamentals project alongside *Learning SQL* by Alan Beaulieu.
+A self-designed MySQL database modelling mobile network operators in the Netherlands — built as a hands-on SQL fundamentals project alongside *Learning SQL* by Alan Beaulieu.
 
-The telecoms industry is structured around mobile network operators (MNOs) that hold spectrum licences in individual countries, operate network infrastructure across multiple technologies (2G, 3G, 4G, 5G), and often belong to larger multinational groups. For example, Vodafone operates as a separate legal entity in each market (Vodafone UK, Vodafone Germany, etc.) but is owned by the Vodafone Group at the parent level. This structure makes it a good fit for a relational database — there are clear entities, relationships, and hierarchies to model.
+The Dutch telecoms market has three main MNOs (KPN, VodafoneZiggo, and Odido) plus a range of MVNOs. Operators hold spectrum licences, deploy network infrastructure across multiple technology generations (2G, 3G, 4G, 5G), and often belong to larger multinational groups. This structure makes it a good fit for a relational database — there are clear entities, relationships, and hierarchies to model.
 
 ## Database
 
